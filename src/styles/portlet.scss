@@ -1,0 +1,44 @@
+.portlet {
+    &.light{
+        margin-bottom: 10px;
+        padding: 12px 20px 15px;
+        background-color: #fff;
+        .portlet-title{
+            min-height: 48px;
+        }
+    }
+    .portlet-title{
+        border-bottom: 1px solid #eee;
+        padding: 0;
+        margin-bottom: 10px;
+        min-height: 41px;
+        -webkit-border-radius: 4px 4px 0 0;
+        -moz-border-radius: 4px 4px 0 0;
+        -ms-border-radius: 4px 4px 0 0;
+        -o-border-radius: 4px 4px 0 0;
+        border-radius: 4px 4px 0 0;
+        .caption{
+            float: left;
+            display: inline-block;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 10px 0;
+        }
+        .tools{
+            .el-collapse-item__arrow{
+                transition: transform .6s,-webkit-transform .6s;
+                &.is-active{
+                    -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    .portlet-body {
+        -webkit-border-radius: 0 0 4px 4px;
+        -moz-border-radius: 0 0 4px 4px;
+        -ms-border-radius: 0 0 4px 4px;
+        -o-border-radius: 0 0 4px 4px;
+        border-radius: 0 0 4px 4px;
+    }
+}
